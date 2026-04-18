@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du Lịch Quận 5 - Trang Chủ</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            color: #333; 
+            background-color: #ffffff; 
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #008080;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 20px; 
+            letter-spacing: 3px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-size: 12px; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        nav a:hover { color: #FFD700; }
+
+        .banner {
+            background-color: #333;
+            /* Đã khôi phục ảnh cũ theo yêu cầu của bạn */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1571474004502-c1def214ac6d?q=80&w=1500');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h2 { 
+            font-size: 45px; 
+            letter-spacing: 10px; 
+            font-weight: bold; 
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .banner p { 
+            color: #FFD700; 
+            letter-spacing: 4px; 
+            margin-top: 10px; 
+            font-weight: lighter;
+        }
+
+        .container { 
+            width: 85%; 
+            margin: 50px auto; 
+            text-align: center; 
+        }
+
+        .section-header { 
+            color: #8B0000; 
+            letter-spacing: 5px; 
+            margin-bottom: 40px; 
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 40px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding-bottom: 25px;
+            transition: 0.3s;
+            background: #fff;
+        }
+
+        .card:hover {
+            border-color: #008080;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+
+        .card h3 { 
+            color: #8B0000; 
+            letter-spacing: 2px; 
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .card p { 
+            font-size: 14px; 
+            color: #666; 
+            padding: 0 30px; 
+            margin-bottom: 25px; 
+            line-height: 1.6;
+            height: 45px;
+            overflow: hidden;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            border: 1px solid #8B0000;
+            color: #8B0000;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .btn:hover { 
+            background-color: #8B0000; 
+            color: white; 
+        }
+      
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 50px 8%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            border-top: 5px solid #008080;
+        }
+
+        .footer-left, .footer-right { width: 45%; text-align: left; }
+
+        footer h4 { 
+            color: #FFD700; 
+            margin-bottom: 15px; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        footer p { margin-bottom: 10px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DU LỊCH QUẬN 5</h1>
+        <nav>
+            <a href="index1.html">Trang Chủ</a>
+            <a href="di-san.html">Di Sản</a>
+            <a href="am-thuc.html">Ẩm Thực</a>
+            <a href="cuoc-song.html">Cuộc Sống</a>
+            <a href="lien-he.html">Liên Hệ</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h2>QUẬN 5</h2>
+        <p>HÀNH TRÌNH DI SẢN</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-header">DANH MỤC KHÁM PHÁ</h2>
+        
+        <div class="grid-box">
+            <div class="card">
+                <img src="https://mylongan.vn/wp-content/uploads/2025/10/tour-city-sai-gon-1-ngay-6.jpg" alt="Di sản">
+                <h3>DI SẢN</h3>
+                <p>Khám phá kiến trúc tâm linh hàng trăm năm tuổi của người Hoa tại các hội quán cổ kính.</p>
+                <a href="di-san.html" class="btn">CHI TIẾT</a>
+            </div>
+
+            <div class="card">
+                <img src="https://mia.vn/media/uploads/blog-du-lich/quan-che-quan-5-co-cu-quan-1720945411.jpg" alt="Ẩm thực">
+                <h3>ẨM THỰC</h3>
+                <p>Thưởng thức tinh hoa vị giác truyền thống lưu truyền lâu đời qua nhiều thế hệ ẩm thực Hoa - Việt.</p>
+                <a href="am-thuc.html" class="btn">CHI TIẾT</a>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/07/pho-den-long.png" alt="Cuộc sống">
+                <h3>CUỘC SỐNG</h3>
+                <p>Nhịp đập văn hóa nhộn nhịp hằng ngày giữa lòng phố thị với những góc hẻm đầy sắc màu.</p>
+                <a href="cuoc-song.html" class="btn">CHI TIẾT</a>
+            </div>
+
+            <div class="card">
+                <img src="https://image.sggp.org.vn/1200x630/Uploaded/2026/duaeymdrei/2024_04_26/18-diem-den-tru-phu-1440.jpg.webp" alt="Liên hệ">
+                <h3>LIÊN HỆ</h3>
+                <p>Kết nối với chúng tôi để được tư vấn các lộ trình tham quan hấp dẫn nhất tại khu vực Quận 5.</p>
+                <a href="lien-he.html" class="btn">CHI TIẾT</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <h4>CÔNG TY DU LỊCH QUẬN 5</h4>
+            <p>📍 123 Hải Thượng Lãn Ông, Phường 10, Quận 5, TP.HCM</p>
+            <p>📞 Hotline: 1900 1234 - (028) 3838 3838</p>
+            <p>✉️ Email: lienhe@quan5heritage.vn</p>
+        </div>
+        <div class="footer-right">
+            <h4>THÔNG TIN THÊM</h4>
+            <p>Website được phát triển bởi nhóm dự án học sinh Quận 5 nhằm quảng bá vẻ đẹp di sản địa phương.</p>
+            <p><i style="color: #FFD700;">"Gìn giữ di sản - Kết nối tương lai"</i></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩm Thực Quận 5 - Tinh Hoa Vị Giác</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            color: #333; 
+            background-color: #ffffff; 
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #008080;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 20px; 
+            letter-spacing: 3px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-size: 12px; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        nav a:hover { color: #FFD700; }
+        .banner {
+            background-color: #333;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1500');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h2 { 
+            font-size: 40px; 
+            letter-spacing: 8px; 
+            font-weight: bold; 
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .banner p { 
+            color: #FFD700; 
+            letter-spacing: 3px; 
+            margin-top: 10px; 
+        }
+
+        .container { 
+            width: 85%; 
+            margin: 50px auto; 
+        }
+
+        .section-header { 
+            text-align: center;
+            color: #8B0000; 
+            letter-spacing: 5px; 
+            margin-bottom: 40px; 
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .food-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 30px;
+        }
+
+        .food-item {
+            display: flex;
+            border: 1px solid #eee;
+            overflow: hidden;
+            transition: 0.3s;
+            height: 250px; /* Cố định chiều cao để các ô bằng nhau */
+        }
+
+        .food-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #008080;
+        }
+
+        .food-img {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .food-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .food-info {
+            flex: 1.5;
+            padding: 20px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .food-info h3 {
+            color: #8B0000;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #FFD700;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .food-info p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+
+        .price {
+            color: #008080;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .btn-more {
+            display: inline-block;
+            padding: 6px 15px;
+            background-color: #8B0000;
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 3px;
+            width: fit-content;
+            transition: 0.3s;
+        }
+
+        .btn-more:hover {
+            background-color: #008080;
+        }
+
+        /* FOOTER GIỮ NGUYÊN */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 50px 8%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            border-top: 5px solid #008080;
+            margin-top: 50px;
+        }
+
+        .footer-left, .footer-right { width: 45%; }
+        footer h4 { color: #FFD700; margin-bottom: 15px; text-transform: uppercase; }
+        footer p { margin-bottom: 10px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DU LỊCH QUẬN 5</h1>
+        <nav>
+            <a href="index1.html">Trang Chủ</a>
+            <a href="di-san.html">Di Sản</a>
+            <a href="am-thuc.html" style="color: #FFD700;">Ẩm Thực</a>
+            <a href="cuoc-song.html">Cuộc Sống</a>
+            <a href="lien-he.html">Liên Hệ</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h2>ẨM THỰC CHỢ LỚN</h2>
+        <p>TINH HOA GIA TRUYỀN HÀNG TRĂM NĂM</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-header">MÓN NGON PHẢI THỬ</h2>
+        
+        <div class="food-grid">
+            <div class="food-item">
+                <div class="food-img">
+                    <img src="https://mia.vn/media/uploads/blog-du-lich/vit-quay-quan-5-dim-tu-tac-1756311963.jpg" alt="Vịt quay Chợ Lớn">
+                </div>
+                <div class="food-info">
+                    <h3>Vịt Quay Chợ Lớn</h3>
+                    <p>Lớp da giòn rụm, màu bánh mật óng ả cùng hương vị đậm đà từ các loại thảo mộc gia truyền Trung Hoa.</p>
+                    <span class="price">Gợi ý: Khu vực Hà Tôn Quyền</span>
+                    <a href="https://mia.vn/cam-nang-du-lich/quan-vit-quay-quan-5-ngon-19156" target="_blank" class="btn-more">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-img">
+                    <img src="https://mia.vn/media/uploads/blog-du-lich/sui-cao-sai-gon-7-1736179640.jpg" alt="Dimsum">
+                </div>
+                <div class="food-info">
+                    <h3>Há Cảo & Dimsum</h3>
+                    <p>Những xửng hấp nóng hổi với há cảo, xíu mại, bánh bao kim sa... mang đậm phong vị trà chiều của người Hoa.</p>
+                    <span class="price">Gợi ý: Các nhà hàng trên đường Nguyễn Trãi</span>
+                    <a href="https://www.greensm.com/vn-vi/news/ha-cao-quan-5-sai-gon" target="_blank" class="btn-more">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-img">
+                    <img src="https://cdn.tgdd.vn/Files/2021/01/23/1322180/den-quan-5-la-phai-thu-5-quan-hu-tieu-mi-chuan-vi-trung-hoa-nay-202101241756450507.jpg" alt="Hủ tiếu mì">
+                </div>
+                <div class="food-info">
+                    <h3>Hủ Tiếu Mì Gia Truyền</h3>
+                    <p>Sợi mì trứng vàng dai ngon kết hợp cùng nước dùng thanh ngọt và những lát cá tươi mềm, tan trong miệng.</p>
+                    <span class="price">Gợi ý: Các tiệm mì lâu đời khu Lương Nhữ Học</span>
+                    <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/den-quan-5-la-phai-thu-5-quan-hu-tieu-mi-chuan-vi-trung-hoa-nay-1322180" target="_blank" class="btn-more">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-img">
+                    <img src="https://mia.vn/media/uploads/blog-du-lich/quan-che-quan-5-che-chau-giang-1720945412.jpg" alt="Chè Tàu">
+                </div>
+                <div class="food-info">
+                    <h3>Chè Tàu (Chè Hà Ký)</h3>
+                    <p>Kết thúc hành trình vị giác với chè mè đen, chè trứng gà trà hay quy linh cao mát lạnh, bổ dưỡng.</p>
+                    <span class="price">Gợi ý: Chè Hà Ký - Châu Văn Liêm</span>
+                    <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-quan-che-ngon-na-tho-noi-tieng-voi-gia-re-binh-dan-tai-quan-5-1339090" target="_blank" class="btn-more">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <h4>CÔNG TY DU LỊCH QUẬN 5</h4>
+            <p>📍 123 Hải Thượng Lãn Ông, Phường 10, Quận 5, TP.HCM</p>
+            <p>📞 Hotline: 1900 1234 - (028) 3838 3838</p>
+            <p>✉️ Email: lienhe@quan5heritage.vn</p>
+        </div>
+        <div class="footer-right">
+            <h4>THÔNG TIN THÊM</h4>
+            <p>Website được phát triển bởi nhóm dự án học sinh Quận 5 nhằm quảng bá vẻ đẹp di sản địa phương.</p>
+            <p><i style="color: #FFD700;">"Gìn giữ di sản - Kết nối tương lai"</i></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<body>
+  <title>Du Lịch Quận 5 - Trang Chủ</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            color: #333; 
+            background-color: #ffffff; 
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #008080;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 20px; 
+            letter-spacing: 3px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+           nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-size: 12px; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        nav a:hover { color: #FFD700; }
+            .banner {
+            background-color: #333;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://storage.googleapis.com/blogvxr-uploads/2025/12/34674875-dia-diem-du-lich-quan-5-pho-nguoi-hoa-china-town-quan-5-2872617-7105075-6342754.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .banner h2 {
+            font-size: 45px; 
+            letter-spacing: 10px; 
+            font-weight: bold; 
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .banner p { 
+            color: #FFD700; 
+            letter-spacing: 4px; 
+            margin-top: 10px; 
+            font-weight: lighter;
+        }
+        .container { 
+            width: 85%; 
+            margin: 50px auto; 
+            text-align: center;}
+        .section-header { 
+            color: #8B0000; 
+            letter-spacing: 5px; 
+            margin-bottom: 40px; 
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+           .grid-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 40px;
+        }
+        .card {
+            border: 1px solid #eee;
+            padding-bottom: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #008080;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }.card img { width: 100%; height: 250px; object-fit: cover; }
+        .card h3 { 
+            color: #8B0000; 
+            letter-spacing: 2px; 
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .card p { 
+            font-size: 14px; 
+            color: #666; 
+            padding: 0 30px; 
+            margin-bottom: 25px; 
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            border: 1px solid #8B0000;
+            color: #8B0000;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .btn:hover { 
+            background-color: #8B0000; 
+            color: white; 
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 50px 8%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            border-top: 5px solid #008080;
+        }
+        .footer-left, .footer-right { width: 45%; } 
+            footer h4 { 
+            color: #FFD700; 
+            margin-bottom: 15px; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        footer p { margin-bottom: 10px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+<header>
+        <h1>DU LỊCH QUẬN 5</h1>
+        <nav>
+            <a href="index1.html">Trang Chủ</a>
+            <a href="di-san.html">Di Sản</a>
+            <a href="am-thuc.html">Ẩm Thực</a>
+            <a href="cuoc-song.html">Cuộc Sống</a>
+            <a href="lien-he.html">Liên Hệ</a>
+        </nav>
+    </header>
+ 
+   <div class="banner">
+      <h2>VĂN HOÁ & CUỘC SỐNG</h2>
+        <p>"Gói trọn tinh hoa, đậm đà hồn Việt."</p>
+    </div>
+
+   <style>
+  .container {
+    width: 90%;
+    margin: 50px auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 40px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.row img {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2)
+    transition: 0.4s;
+}
+.row img:hover {
+    transform: scale(1.05);
+}
+.text {
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-left: 5px solid darkred;
+     text-align: left;
+}
+.text h1 {
+    font-family: sans-serif ;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    color: darkred;
+    font-size: 35px;
+    margin-bottom: 10px;
+     text-align: center;
+}
+.text p {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.text ul, .text ol {
+   font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 2px;
+     text-align: left;
+}
+.text li {
+   font-size: 20px;
+    margin-bottom: 8px;
+}
+.button {
+    display: block;
+    width:fit-content;
+    padding: 8px 16px;
+    background: darkred;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+     margin-top: 8px;
+   margin: 10px auto;
+}
+.button:hover {
+    background: #5A0000;
+}
+  </style>
+  
+<div class="container">
+<div class="row">
+        <img src="https://images2.thanhnien.vn/528068263637045248/2025/2/21/c586186511b8afe6f6a9-1740140286457498920485.jpg">
+        <div class="text">
+          <h1>CHỢ LỚN</h1>
+            <p>Chợ Lớn là một trong những khu chợ sỉ lớn nhất của Thành phố Hồ Chí Minh. Không chỉ là nơi giao thương, buôn bán của người dân Sài Gòn mà Chợ Lớn còn là địa điểm du lịch thu hút du khách trong và ngoài nước.</p>
+          <p style="color:darkred;text-decoration:underline;font-weight:bold"> Những nét nổi bật của Chợ Lớn là: </p>
+            <ul style="color:#DAA520">
+                <li>Kiến trúc đặc trưng</li>
+                <li>Buôn bán sầm uất</li>
+                <li>Đậm chất người Hoa</li>
+            </ul>
+<a href="https://vovgiaothong.vn/news/chuyen-cho-lon-hon-hoa-giua-long-sai-gon-d51903.amp" class="button">Xem thêm</a>
+        </div>
+    </div>
+
+    <div class="row reverse">
+        <img src="https://thuongtruong2-fileserver.nvcms.net/IMAGES/2022/06/17/20220617071719-100420220608103916-1004dai-quang-minh.png">
+        <div class="text">
+<h1>CHỢ ĐẠI QUANG MINH</h1>
+            <p> Chợ Đại Quang Minh là "thiên đường" phụ liệu may mặc và handmade lớn nhất Sài Gòn.</p>
+          <p style="color:darkred;text-decoration:underline;font-weight:bold"> Chợ Đại Quang Minh chuyên bán sỉ các mặt hàng như:</p>
+            <ul style="color:#DAA520">
+                <li>Nút, chỉ, ren, ruy băng, hạt cườm</li>
+                <li>Hạt cườm, vòng tay, phụ kiện trang trí</li>
+            </ul>
+<a href="https://thanhnien.vn/doi-cho-o-tphcm-nhung-soi-chi-niu-ky-uc-o-cho-dai-quang-minh-185251024230321691.htm" class="button">Khám phá</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <img src="https://sakos.vn/wp-content/uploads/2024/07/cholon-1.jpg">
+        <div class="text">
+            <h1>NHỊP SỐNG NGƯỜI HOA-VIỆT</h1>  
+           <p>Nhịp sống của cộng đồng người Việt gốc Hoa là một nét văn hóa đặc sắc, hòa quyện giữa truyền thống lâu đời và hơi thở hiện đại. Họ đóng góp quan trọng vào sự đa dạng văn hóa và phát triển kinh tế của Việt Nam, trong khi vẫn giữ vững bản sắc riêng.</p> 
+              <p style="color:darkred; text-decoration:underline;font-weight:bold">Những nét đặc sắc về đời sống của người Hoa là:</p>
+<ul style="color:#DAA520">
+                <li>Tinh thần kinh doanh và lao động cần cù</li>
+                <li>Văn hóa ẩm thực đặc trưng</li>
+                <li>Sự giao thoa văn hóa hòa hợp</li>
+            </ul>
+          <a href="https://dansinh.dantri.com.vn/dien-dan-dan-sinh/net-dep-cua-van-hoa-nguoi-hoa-giua-long-tphcm-20211013001358000.htm" class="button">Khám phá</a>
+
+     </div>
+    </div>
+
+</div>
+    <footer>
+        <div class="footer-left">
+            <h4>CÔNG TY DU LỊCH QUẬN 5</h4>
+            <p>📍 123 Hải Thượng Lãn Ông, Phường 10, Quận 5, TP.HCM</p>
+            <p>📞 Hotline: 1900 1234 - (028) 3838 3838</p>
+            <p>✉️ Email: lienhe@quan5heritage.vn</p>
+        </div>
+        <div class="footer-right">
+            <h4>THÔNG TIN THÊM</h4>
+            <p>Website được phát triển bởi nhóm dự án học sinh Quận 5 nhằm quảng bá vẻ đẹp di sản địa phương.</p>
+            <p><i style="color: #FFD700;">"Gìn giữ di sản - Kết nối tương lai"</i></p>
+        </div>
+    </footer>
+     </body>
